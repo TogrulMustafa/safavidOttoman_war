@@ -1,0 +1,187 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+}
+.bg-war {
+    background: url('./img/1.jpg') no-repeat center;
+    background-size: cover;
+}
+.bg-008074bd {
+    background-color: #008074bd;
+}
+.bg-crimson {
+    background-color: crimson;
+}
+.color-fff {
+    color: #fff;
+}
+.color-crimson {
+    color: crimson;
+}
+.container {
+    width: 1600px;
+    margin: 0 auto;
+}
+.iblock {
+    display: inline-block;
+}
+.flex {
+    display: flex;
+}
+.iflex {
+    display: inline-flex;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: #bbb;
+}
+.basis-10 {
+    flex-basis: 10%;
+}
+.basis-20 {
+    flex-basis: 20%;
+}
+.basis-50 {
+    flex-basis: 50%;
+}
+.grow {
+    flex-grow: 1;
+}
+.between {
+    justify-content: space-between;
+}
+.ai-center {
+    align-items: center;
+}
+.column {
+    flex-direction: column;
+}
+.w-40 {
+    width: 40px;
+}
+.h-100 {
+    height: 100%;
+}
+.h-40 {
+    height: 40px;
+}
+.cover {
+    object-fit: cover;
+}
+.style-none {
+    list-style: none;
+}
+.decoration-none {
+    text-decoration: none;
+}
+.r-10 {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.r-50 {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.p-5 {
+    padding: 5px;
+}
+.mr-10 {
+    margin-right: 10px;
+}
+.ml-10 {
+    margin-left: 10px;
+}
+.mr-5 {
+    margin-right: 5px;
+}
+.mb-10 {
+    margin-bottom: 10px;
+}
+.ff-Kalam {
+    font-family: 'Kalam', cursive;
+}
+.SahIsmayil {
+    height:200px;
+    width:200px;
+    object-fit: cover;
+    position: relative;
+    animation-name: sahIsmayil;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+@keyframes sahIsmayil {
+    0%   {top:0px; left: 0px; opacity: .2;}
+    100% { top:0px; left: 960px; opacity: 1; transform:translateX(-100%);}
+}
+.SultanSelim {
+    height:200px;
+    width:200px;
+    object-fit: cover;
+    position: relative;
+    animation-name: sultanSelim;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+@keyframes sultanSelim {
+    0%   {top:0px; right: 0px; opacity: .2;}
+    100% { top:0px; right: 960px; opacity: 1; transform:translateX(100%);}
+    /* ? 960 yerine ne yazmaq olar */
+}
+.b-red {
+    border: 1px solid red;
+}
+h3 {
+    position: relative;
+}
+h3::before {
+    content: ' ';
+    position: absolute;
+    top:25px;
+    left:0;
+    height: 2px;
+    width: 150px;
+    background-color: crimson;
+}
+.moveContent-X {
+    transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+}
+.moveContent-X:hover {
+    transform:translateX(50px);
+    -webkit-transform:translateX(50px);
+    -moz-transform:translateX(50px);
+    -ms-transform:translateX(50px);
+    -o-transform:translateX(50px);
+    color:#111;
+}
+.moveContent-Y {
+    transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+}
+.moveContent-Y:hover {
+    transform:translateY(15px);
+    -webkit-transform:translateY(15px);
+    -moz-transform:translateY(15px);
+    -ms-transform:translateY(15px);
+    -o-transform:translateY(15px);
+    background-color: crimson;
+}

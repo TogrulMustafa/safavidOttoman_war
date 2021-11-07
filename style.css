@@ -16,6 +16,9 @@ body {
 .bg-crimson {
     background-color: crimson;
 }
+.bg-blue {
+    background-color: rgb(32, 217, 241);
+}
 .color-fff {
     color: #fff;
 }
@@ -46,8 +49,11 @@ body {
 .basis-20 {
     flex-basis: 20%;
 }
-.basis-50 {
-    flex-basis: 50%;
+.basis-60 {
+    flex-basis: 60%;
+}
+.basis-30 {
+    flex-basis: 30%;
 }
 .grow {
     flex-grow: 1;
@@ -55,23 +61,47 @@ body {
 .between {
     justify-content: space-between;
 }
+.evenly {
+    justify-content: space-evenly;
+}
 .ai-center {
     align-items: center;
+}
+.jc-center {
+    justify-content: center;
+}
+.justify {
+    text-align: justify;
 }
 .column {
     flex-direction: column;
 }
 .w-40 {
-    width: 40px;
+    width: 60px;
 }
 .h-100 {
     height: 100%;
 }
+.h-80 {
+    height: 80%;
+}
+.w-100 {
+    width: 100%;
+}
+.w-50 {
+    width: 50%;
+}
 .h-40 {
-    height: 40px;
+    height: 60px;
 }
 .cover {
     object-fit: cover;
+}
+.position-l {
+    object-position: left;
+}
+.position-r {
+    object-position: right;
 }
 .style-none {
     list-style: none;
@@ -93,8 +123,28 @@ body {
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
 }
+.r-30 {
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+.r-l-30 {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.r-r-30 {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
 .p-5 {
     padding: 5px;
+}
+.px-20 {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .mr-10 {
     margin-right: 10px;
@@ -108,6 +158,9 @@ body {
 .mb-10 {
     margin-bottom: 10px;
 }
+.fs-30 {
+    font-size: 30px;
+}
 .ff-Kalam {
     font-family: 'Kalam', cursive;
 }
@@ -118,12 +171,12 @@ body {
     position: relative;
     animation-name: sahIsmayil;
     animation-duration: 5s;
-    animation-iteration-count: infinite;
+    animation-iteration-count:1 ;
     animation-timing-function: ease;
 }
 @keyframes sahIsmayil {
     0%   {top:0px; left: 0px; opacity: .2;}
-    100% { top:0px; left: 960px; opacity: 1; transform:translateX(-100%);}
+    100% { top:0px; left: 50%; opacity: 1; transform:translateX(-100%);}
 }
 .SultanSelim {
     height:200px;
@@ -132,16 +185,18 @@ body {
     position: relative;
     animation-name: sultanSelim;
     animation-duration: 5s;
-    animation-iteration-count: infinite;
+    animation-iteration-count:1;
     animation-timing-function: ease;
 }
 @keyframes sultanSelim {
     0%   {top:0px; right: 0px; opacity: .2;}
-    100% { top:0px; right: 960px; opacity: 1; transform:translateX(100%);}
-    /* ? 960 yerine ne yazmaq olar */
+    100% { top:0px; right: 50%; opacity: 1; transform:translateX(100%);}
 }
 .b-red {
     border: 1px solid red;
+}
+.b-green {
+    border: 1px solid green;
 }
 h3 {
     position: relative;
@@ -184,4 +239,51 @@ h3::before {
     -ms-transform:translateY(15px);
     -o-transform:translateY(15px);
     background-color: crimson;
+}
+.relative {
+    position: relative;
+}
+.absolute {
+    position: absolute;
+}
+.top-0 {
+    top:0;
+}
+.left-0 {
+    left: 0;
+}
+/* .cards {
+    perspective: 20px;
+} */
+.card {
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transform-style: preserve-3d;
+}
+.card:hover {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+.card_front {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+.card__front img {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+.card_back {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
 }

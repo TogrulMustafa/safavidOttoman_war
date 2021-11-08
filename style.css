@@ -253,37 +253,28 @@ h3::before {
     left: 0;
 }
 /* .cards {
-    perspective: 20px;
+    
 } */
 .card {
-    transition: all .3s ease;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -ms-transition: all .3s ease;
-    -o-transition: all .3s ease;
     transform-style: preserve-3d;
+    position: relative;
+    perspective: 500px;
 }
-.card:hover {
-    transform: rotateY(180deg);
-    -webkit-transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
-    -ms-transform: rotateY(180deg);
-    -o-transform: rotateY(180deg);
+.card:hover .card_front {
+    transform: rotateY(-180deg);
+}
+.card:hover .card_back {
+    transform: rotateY(0deg);
+    
 }
 .card_front {
     backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-}
-.card__front img {
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
+    position: absolute;
+    transition: all 1s ease;
 }
 .card_back {
     backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
     transform: rotateY(180deg);
-    -webkit-transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
-    -ms-transform: rotateY(180deg);
-    -o-transform: rotateY(180deg);
+    position: absolute;
+    transition: all 1s ease;
 }

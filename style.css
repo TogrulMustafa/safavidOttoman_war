@@ -171,12 +171,14 @@ body {
     position: relative;
     animation-name: sahIsmayil;
     animation-duration: 5s;
-    animation-iteration-count:1 ;
+    animation-iteration-count:5;
     animation-timing-function: ease;
+    animation-direction: alternate;
 }
 @keyframes sahIsmayil {
     0%   {top:0px; left: 0px; opacity: .2;}
     100% { top:0px; left: 50%; opacity: 1; transform:translateX(-100%);}
+    
 }
 .SultanSelim {
     height:200px;
@@ -185,12 +187,14 @@ body {
     position: relative;
     animation-name: sultanSelim;
     animation-duration: 5s;
-    animation-iteration-count:1;
+    animation-iteration-count:5;
     animation-timing-function: ease;
+    animation-direction: alternate;
 }
 @keyframes sultanSelim {
     0%   {top:0px; right: 0px; opacity: .2;}
     100% { top:0px; right: 50%; opacity: 1; transform:translateX(100%);}
+   
 }
 .b-red {
     border: 1px solid red;
@@ -212,32 +216,16 @@ h3::before {
 }
 .moveContent-X {
     transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    -moz-transition: all .4s ease-in-out;
-    -ms-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
 }
 .moveContent-X:hover {
     transform:translateX(50px);
-    -webkit-transform:translateX(50px);
-    -moz-transform:translateX(50px);
-    -ms-transform:translateX(50px);
-    -o-transform:translateX(50px);
     color:#111;
 }
 .moveContent-Y {
     transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    -moz-transition: all .4s ease-in-out;
-    -ms-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
 }
 .moveContent-Y:hover {
     transform:translateY(15px);
-    -webkit-transform:translateY(15px);
-    -moz-transform:translateY(15px);
-    -ms-transform:translateY(15px);
-    -o-transform:translateY(15px);
     background-color: crimson;
 }
 .relative {
@@ -252,13 +240,12 @@ h3::before {
 .left-0 {
     left: 0;
 }
-/* .cards {
-    
-} */
+.cards {
+    perspective: 1000px;
+}
 .card {
     transform-style: preserve-3d;
     position: relative;
-    perspective: 500px;
 }
 .card:hover .card_front {
     transform: rotateY(-180deg);
@@ -270,11 +257,19 @@ h3::before {
 .card_front {
     backface-visibility: hidden;
     position: absolute;
-    transition: all 1s ease;
+    transition: all 5s ease;
+    -webkit-transition: all 5s ease;
+    -moz-transition: all 5s ease;
+    -ms-transition: all 5s ease;
+    -o-transition: all 5s ease;
 }
 .card_back {
     backface-visibility: hidden;
     transform: rotateY(180deg);
     position: absolute;
-    transition: all 1s ease;
+    transition: all 5s ease;
+    -webkit-transition: all 5s ease;
+    -moz-transition: all 5s ease;
+    -ms-transition: all 5s ease;
+    -o-transition: all 5s ease;
 }
